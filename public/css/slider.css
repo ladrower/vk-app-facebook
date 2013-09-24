@@ -1,0 +1,52 @@
+#slider-wrapper { 
+	width: 807px; 
+	margin: 0;
+        padding: 40px 10px 10px 10px;
+        background: #F7F7F7 url(images/fresh_bg.png);
+        z-index: 299;
+        position: absolute;
+        top: 8px;
+        left: -10px;
+}
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+        background-color: #F7F7F7;
+        cursor: pointer;
+        z-index: 399;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}

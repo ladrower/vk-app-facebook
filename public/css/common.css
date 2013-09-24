@@ -1,0 +1,421 @@
+/* 
+    Document   : common
+    Created on : 25.08.2012, 16:18:36
+    Author     : Art
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    font-weight: normal;
+    background: #F7F7F7 url(images/fresh_bg.png);
+}
+
+img {
+    border: none;
+}
+
+.fl_l {
+    float: left;
+}
+.fl_r {
+    float: right;
+}
+.full_width {
+    width: 100%;
+}
+
+#layout {
+    display: inline-block;
+    width: 807px;
+    height: 460px;
+    padding: 0;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+
+#header {
+    position: relative;
+}
+
+#vk_like_container {
+    position: absolute;
+    top: -38px;
+    right: -50px;   
+    z-index: 199;
+}
+
+#index-container {
+}
+
+#statusbar {
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    width: 808px;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 7px 10px;
+    line-height: 1;
+    background: #E9EDF1;
+    color: #607387;
+    border: solid #D9E0E7;
+    border-width: 0px 0 1px 0;
+    z-index: 99;
+}
+
+#toolbar {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 807px;
+    height: 38px;
+    padding: 11px 10px 0px 10px;
+    background-color: #F1F1F1;
+    border-top: 1px solid #D9E0E7;
+    z-index: 799;
+}
+#toolbar.position-top {
+    top: -14px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 1px solid #D9E0E7;
+}
+
+img.cloudcarousel,
+img.background {
+    padding: 10px;
+    margin: 7px;
+    float: left;
+    background: #FFF;
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+img.background {
+    opacity: 0.5;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+.ui-widget-content { 
+    border-color: #D9E0E7 !important;
+}
+.ui-progressbar {
+    height: 18px !important;
+}
+.ui-progressbar .ui-progressbar-value { 
+    background: #45688E url(images/vk-bg.png) 0px 0px;
+}
+.ui-progressbar.animated .ui-progressbar-value { 
+    background-image: url(images/progress_grad.gif);
+}
+
+#interests-box {
+    width: 807px;
+    height: 450px;
+    float: left;   
+}
+#interests-box .info-message {
+    font-weight: bold;
+    padding: 0px 0px 5px 0px;
+    color: #45688E;
+}
+#interests-box .info-message.highlighted {
+    color: #000;
+}
+.checkboxes-wrap {
+    width: 807px;
+    height: 400px;
+    overflow: hidden;
+    float: left;   
+}
+.checkbox-container {
+    width: 100px;
+    height: 20px;
+    padding: 0;
+    margin: 2px 15px 2px 0px;
+    float: left;
+    cursor: pointer;
+}
+.checkbox-container .checkbox div {
+    height: 14px;
+    width: 15px;
+    overflow: hidden;
+    margin: 3px 0;
+    background: url(images/check.gif) 0px 0px no-repeat;
+    float: left;
+}
+.checkbox-container .checkbox .checkbox_on {
+    background-position: 0px -14px;
+}
+.checkbox-container .checkbox .checkbox_on_hover {
+    background-position: 0px -42px;
+}
+.checkbox-container .checkbox .checkbox_off_hover {
+    background-position: 0px -28px;
+}
+.checkbox-container .checkbox_label {
+    line-height: 20px;
+    padding: 0 0 0 5px;
+    margin: 0;
+    float: left;
+}
+
+
+#carousel {
+    padding: 10px 0 0 0;
+}
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#gallery .sliderContainer {
+    width: 727px;
+    height: 100000px;
+    margin: 0 40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#gallery .sliderControls .btn_previous,
+#gallery .sliderControls .btn_next {
+    position: absolute;
+    width: 40px;
+    height: 450px;
+    top: 0px;
+    z-index: 199;
+    cursor: pointer;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
+}
+
+#gallery .sliderControls .btn_previous:hover,
+#gallery .sliderControls .btn_next:hover {
+    opacity: 1;
+}
+
+#gallery .sliderControls .btn_previous {
+    left: 0;
+    background-image: url("images/left.gif");
+}
+
+#gallery .sliderControls .btn_next {
+    right: 0;
+    background-image: url("images/right.gif");
+}
+
+#gallery .userContainer {
+    width: 707px;
+    margin: 0 10px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+#gallery .userContainer .leftBlock {
+    width: 230px;
+    float: left; 
+}
+#gallery .userContainer .rightBlock {
+    width: 470px;
+    float: right; 
+}
+
+#gallery .userContainer.prev {
+    left: -807px;
+}
+
+#gallery .userContainer.next {
+    left: 807px;
+}
+
+#gallery .photoContainer {
+    width: 230px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#gallery .actionsContainer{
+    width: 210px;
+    padding: 10px 0 0px 10px;
+    background-color: #F1F1F1;
+    float: left;
+}
+
+#gallery .photoContainer img {
+    width: 200px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    float: left;
+    background: #FFF;
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#gallery .interestsContainer,
+#gallery .nameContainer,
+#gallery .mutualContainer{
+    width: 470px;
+    float: right;
+    padding: 0 0 15px 0;
+}
+
+#gallery .nameContainer a {
+    color: #45688E;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px 0 0 0;
+    padding: 0;
+    float: left;
+}
+
+#gallery .interestsContainer h4,
+#gallery .mutualContainer h4{
+    width: 100%;
+    border-bottom: 1px solid #B9C4DA;
+    font-size: 12px;
+    color: #45688E;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+#gallery .mutualContainer a {
+    width: 110px;
+    height: 110px;
+    float: left;
+    padding: 10px 8px 0 0;
+}
+
+#gallery .mutualContainer a img {
+    padding: 5px;
+    margin: 0;
+    float: left;
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+#gallery .interestsContainer .interestsBox {
+    width: 100%;
+    float: left;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #E8EBEE;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+#gallery .interestsContainer .interestsBox b {
+    color: #777;
+}
+
+#gallery .interestsContainer .interestsBox span {
+    color: #333;
+}
+
+.fl_r .button_blue,
+.fl_r .button_gray {
+    margin-left: 10px;
+}
+.fl_l .button_blue,
+.fl_l .button_gray {
+    margin-right: 10px;
+}
+.button_blue, .button_gray {
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    zoom: 1;
+}
+.button_blue button, .button_gray button {
+    border: 1px solid;
+    background: none;
+    font-size: 11px;
+    margin: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    padding: 4px 14px;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    overflow: visible;
+}
+.button_wide {
+    display: block;
+}
+.button_wide button {
+    width: 100%;
+}
+.button_blue {
+    border: 1px solid #4e6f93;
+    border-top-color: #517295;
+    background: #5D81A7;
+}
+.button_blue button {
+    border-top-color: #789ABF;
+    border-bottom-color: #5980A9;
+    border-left-color: #5980A9;
+    border-right-color: #5980A9;
+    color: #FFF;
+    text-shadow:0 1px 0 #45688E;
+    background: url(images/button_vk.png) #6181a6 repeat-x top;
+    background-position: 0px -16px;
+}
+.button_blue button:hover,
+.button_blue button.hover {
+    background-position: 0px -8px;
+}
+.button_blue button:active,
+.button_blue button.active {
+    background: #5e80a5;
+    border: 1px solid #5e80a5;
+    position:relative;
+}
+.button_gray {
+    border: 1px solid #b3b3b3;
+    background: #e0e0e0;
+}
+.button_gray button {
+    border-top-color: #ffffff;
+    border-bottom-color: #e5e5e5;
+    border-left-color: #e7e7e7;
+    border-right-color: #e7e7e7;
+    color: #444;
+    text-shadow:0 1px 0 #ffffff;
+    background: url(images/button_vk.png) #dddddd repeat-x top;
+    background-position: 0px -54px;
+}
+.button_gray button:hover {
+    background-position: 0px -46px;
+}
+.button_gray button:active {
+    background: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    position:relative;
+}
